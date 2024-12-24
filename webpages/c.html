@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>C</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="webpages.css">
+
+</head>
+
+<body>
+  <a class="close-button" href="/index.html" onclick="">✖</a>
+  <button class="btn" href="">C &#8594</button>
+  <section>
+    <div class="box">
+      <p class="content">
+        Structure of C Language program<br>
+        1. Comment line<br>
+        2. Preprocessor directive<br>
+        3. Global variable declaration<br>
+        4. main function( )<br>
+        {<br>
+        Local variables;<br>
+        Statements;<br>
+        }<br>
+        User defined function<br>
+        &#125<br>
+        &#125<br>
+        Comment line<br>
+        It indicates the purpose of the program. It is represented as
+        /*……………………………..*/
+        Preprocessor Directive:
+        *Under revision
+
+        #include&lt;stdio.h&gt; tells the compiler to include information about the standard
+        input/output library. It is also used in symbolic constant such as #define PI
+        3.14(value). The stdio.h (standard input output header file) contains definition
+        &declaration of system defined function such as printf( ), scanf( ), pow( ) etc.
+        Generally printf() function used to display and scanf() function used to read value.
+        <br>
+        Global Declaration:-
+        This is the section where variable are declared globally so that it can be access by
+        all the functions used in the program. And it is generally declared outside the
+        function :
+        main()
+        It is the user defined function and every function has one main() function from
+        where actually program is started and it is encloses within the pair of curly braces.
+        The main( ) function can be anywhere in the program but in general practice it is
+        placed in the first position.
+        <br>
+        <br>
+        Identifiers
+        Identifiers are user defined word used to name of entities like variables, arrays,
+        functions, structures etc. Rules for naming identifiers are:
+        1. name should only consists of alphabets (both upper and lower case), digits
+        and underscore (_) sign.<br>
+        2. first characters should be alphabet or underscore<br>
+        3. name should not be a keyword<br>
+        4. since C is a case sensitive, the upper case and lower case considered
+        differently, for example code, Code, CODE etc. are different identifiers.<br>
+        5. identifiers are generally given in some meaningful name such as value,
+        net_salary, age, data etc. An identifier name may be long, some implementation
+        recognizes only first eight characters, most recognize 31 characters. ANSI
+        standard compiler recognize 31 characters. Some invalid identifiers are 5cb, int,
+        res#, avg no etc<br>
+        <br>
+        There are certain words reserved for doing specific task, these words
+        are known as reserved word or keywords. These words are predefined and always
+        written in lower case or small letter. These keywords cann’t be used as a variable
+        name as it assigned with fixed meaning. Some examples are int, short, signed,
+        unsigned, default, volatile, float, long, double, break, continue, typedef, static,
+        do, for, union, return, while, do, extern, register, enum, case, goto, struct,
+        char, auto, const etc.
+        <br>
+        data types<br>
+        Data types refer to an extensive system used for declaring variables or functions of
+        different types before its use. The type of a variable determines how much space it
+        occupies in storage and how the bit pattern stored is interpreted. The value of a
+        variable can be changed any time.
+        C has the following 4 types of data types<br>
+        basic built-in data types: int, float, double, char<br>
+        Enumeration data type: enum<br>
+        Derived data type: pointer, array, structure, union<br>
+        Void data type: void<br>
+        A variable declared to be of type int can be used to contain integral values
+        only—that is, values that do not contain decimal places. A variable declared to be
+        of type float can be used for storing floating- point numbers (values containing
+        decimal places). The double type is the same as type float, only with roughly twice
+        the precision. The char data type can be used to store a single character, such as the
+        letter a, the digit character 6, or a semicolon similarly A variable declared char can
+        only store character type value.<br>
+        There are two types of type qualifier in c<br>
+        Size qualifier: short, long<br>
+        Sign qualifier: signed, unsigned<br>
+
+
+        Constant is a any value that cannot be changed during program execution. In C,
+        any number, single character, or character string is known as a constant. A constant
+        is an entity that doesn’t change whereas a variable is an entity that may change
+        <br>
+        Variables:-
+        Variable is a data name which is used to store some data value or symbolic names
+        for storing program
+        computations and results. The value of the variable can be change during the
+        execution. The rule for naming the variables is same as the naming identifier.
+        Before used in the program it must be declared. Declaration of variables specify its
+        name, data types and range of the value that variables can store depends upon its
+        data types.
+        <br>
+        Loops in C<br>
+        <br>
+        Loop:-it is a block of statement that performs set of instructions. In loops
+        Repeating particular portion of the program either a specified number of time or
+        until a particular no of condition is being satisfied.
+        There are three types of loops in c<br>
+        1.While loop<br>
+        2.do while loop<br>
+        3.for loop<br>
+
+        if statement<br><br>
+        Statement execute set of command like when condition is true and its syntax is<br>
+        If (condition)<br><br>
+        Statement;<br>
+        The statement is executed only when condition is true. If the if statement body is
+        consists of several statement then better to use pair of curly braces.
+
+        if…..else ... Statement<br><br>
+        it is bidirectional conditional control statement that contains one condition & two
+        possible action. Condition may be true or false, where non-zero value regarded as
+        true & zero value regarded as false. If condition are satisfy true, then a single or
+        block of statement executed otherwise another single or block of statement is
+        executed.
+        <br><br>
+        Array is the collection of similar data types or collection of similar entity stored in
+        contiguous memory location. Array of character is a string. Each data item of an
+        array is called an element. And each element is unique and located in separated
+        memory location. Each of elements of an array share a variable but each element
+        having different index no. known as subscript.
+        <br><br>
+        Two dimensional array is known as matrix. The array declaration in both the array
+        i.e.in single dimensional array single subscript is used and in two dimensional
+        array two subscripts are is used.
+        <br>
+        String<br>
+        Array of character is called a string. It is always terminated by the NULL
+        character. String is a one dimensional array of character.
+        We can initialize the string as<br>
+        char name[]={‘j’,’o’,’h’,’n’,’\o’};
+        <br>
+        A function is a self contained block of codes or sub programs with a set of
+        statements that perform some specific task or coherent task when it is called.
+        It is something like to hiring a person to do some specific task like, every six
+        months servicing a bike and hand over to it.
+        Any ‘C’ program contain at least one function i.e main().
+        There are basically two types of function those are
+        1. Library function
+        2. User defined function
+        The user defined functions defined by the user according to its requirement
+        System defined function can’t be modified, it can only read and can be used.
+        These function are supplied with every C compiler
+        Source of these library function are pre complied and only object code get used by
+        the user by linking to the code by linker.
+       
+        <br>
+        Local variable:-
+        variables that are defined with in a body of function or block. The local
+        variables can be used only in that function or block in which they are declared.
+        <br>
+        Global variable:-<br>
+        the variables that are defined outside of the function is called global variable. All
+        functions in the program can access and modify global variables. Global variables
+        are automatically initialized at the time of initialization.
+        <br>
+        Static variables:- static variables are declared by writing the key word static.
+        <br>
+        <br>
+        Recursion
+        <br>
+        When function calls itself (inside function body) again and again then it is
+        called as recursive function. In recursion calling function and called function are
+        same. It is powerful technique of writing complicated algorithm in easiest way.
+        According to recursion problem is defined in term of itself. Here statement with in
+        body of the function calls the same function and same times it is called as circular
+        definition. In other words recursion is the process of defining something in form of
+        itself.
+
+      </p>
+    </div>
+    <img class="icon" src="assets_webpages/computer-icon.png">
+  </section>
+
+</body>
+
+</html>

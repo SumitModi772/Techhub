@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="webpages.css">
+
+</head>
+
+<body>
+  <a class="close-button" href="/index.html" onclick="">✖</a>
+  <button class="btn" href="">CSS &#8594</button>
+  <section>
+    <div class="box">
+      <p class="content">
+        CSS is the language we use to style an HTML document.
+
+        CSS describes how HTML elements should be displayed.
+        <br> Why Use CSS?<br>
+        CSS is used to define styles for your web pages, including the design, layout and variations in display for
+        different devices and screen sizes.
+
+        A CSS rule consists of a selector and a declaration block.The selector points to the HTML element you want to
+        style.
+
+        The declaration block contains one or more declarations separated by semicolons.
+
+        Each declaration includes a CSS property name and a value, separated by a colon.
+
+        Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+        When a browser reads a style sheet, it will format the HTML document according to the information in the style
+        sheet.
+        <br>
+
+        There are three ways of inserting a style sheet:<br>
+        <br>
+        External CSS:-
+        With an external style sheet, you can change the look of an entire website by changing just one file!
+
+        Each HTML page must include a reference to the external style sheet file inside the
+        &lt;link&gt; element, inside the head section.
+        <br>
+        <br>
+        Internal CSS:-
+        An internal style sheet may be used if one single HTML page has a unique style.
+
+        The internal style is defined inside the &lt;style&gt; element, inside the head section.
+        <br>
+        <br>Inline CSS:-
+        An inline style may be used to apply a unique style for a single element.
+
+        To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS
+        property.
+      <table class="table">
+        <tr>
+          <th>Property</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>&lt;background-color&gt;</td>
+          <td>Sets the background-color of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;background-image&gt;</td>
+          <td>Sets the background image for an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;background-postion&gt;</td>
+          <td>Sets the starting position of a background image.</td>
+        </tr>
+        <tr>
+          <td>&lt;background-repeat&gt;</td>
+          <td>Sets how a background image will be repeated.</td>
+        </tr>
+        <tr>
+          <td>&lt;background-attachment&gt;</td>
+          <td>Sets whether a background image is fixed or scrolls with the rest of the page.</td>
+        </tr>
+        <tr>
+          <td>&lt;border&gt;</td>
+          <td>Sets all the border properties in one declaration.</td>
+        </tr>
+        <tr>
+          <td>&lt;border-bottom&gt;</td>
+          <td>Sets all the bottom border properties in one declaration.</td>
+        </tr>
+        <tr>
+          <td>&lt;border-bottom-color&gt;</td>
+          <td>Sets the color of the bottom border.</td>
+        </tr>
+        <tr>
+          <td>&lt;border-bottom-style&gt;</td>
+          <td>Sets the style of the bottom border.</td>
+        </tr>
+        <tr>
+          <td>&lt;border-bottom-width&gt;</td>
+          <td>Sets the width of the bottom border.</td>
+        </tr>
+        <tr>
+          <td>&lt;border-color&gt;</td>
+          <td>Sets the color of the four borders.</td>
+        </tr>
+        <tr>
+          <td>&lt;border-radius&gt;</td>
+          <td>Sets all the four border-*-radius properties for rounded corners.</td>
+        </tr>
+        <tr>
+          <td>&lt;border-style&gt;</td>
+          <td>Sets the style of the four borders.</td>
+        </tr>
+        <tr>
+          <td>&lt;margin&gt;</td>
+          <td>A shorthand property for setting all the margin properties in one declaration.</td>
+        </tr>
+        <tr>
+          <td>&lt;margin-bottom&gt;</td>
+          <td>Sets the bottom margin of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;margin-left&gt;</td>
+          <td>Sets the left margin of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;margin-right&gt;</td>
+          <td>Sets the right margin of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;margin-top&gt;</td>
+          <td>Sets the top margin of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;padding&gt;</td>
+          <td>A shorthand property for setting all the padding properties in one declaration.</td>
+        </tr>
+        <tr>
+          <td>&lt;padding-bottom&gt;</td>
+          <td>Sets the bottom padding of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;padding-left&gt;</td>
+          <td>Sets the left padding of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;padding-right&gt;</td>
+          <td>Sets the right padding of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;padding-top&gt;</td>
+          <td>Sets the top padding of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;height&gt;</td>
+          <td>Sets the height of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;max-height&gt;</td>
+          <td>Sets the maximum height of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;max-width&gt;</td>
+          <td>Sets the maximum width of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;min-height&gt;</td>
+          <td>Sets the minimum height of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;min-width&gt;</td>
+          <td>Sets the minimum width of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;width&gt;</td>
+          <td>Sets the width of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;direction&gt;</td>
+          <td>Specifies the text direction/writing direction.</td>
+        </tr>
+        <tr>
+          <td>&lt;text-align&gt;</td>
+          <td>Specifies the horizontal alignment of text.</td>
+        </tr>
+        <tr>
+          <td>&lt;text-align-last&gt;</td>
+          <td>Defines a short inline quotation.</td>
+        </tr>
+        <tr>
+          <td>&lt;vertical-align&gt;</td>
+          <td>Sets the vertical alignment of an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;text-decoration&gt;</td>
+          <td>Sets all the text-decoration properties in one declaration.</td>
+        </tr>
+        <tr>
+          <td>&lt;text-decoration-color&gt;</td>
+          <td>Specifies the color of the text-decoration.</td>
+        </tr>
+        <tr>
+          <td>&lt;text-decoration-style&gt;</td>
+          <td>Specifies the style of the text decoration (solid, dotted, etc.).</td>
+        </tr>
+        <tr>
+          <td>&lt;letter-spacing&gt;</td>
+          <td>Specifies the space between characters in a text.</td>
+        </tr>
+        <tr>
+          <td>&lt;line-height&gt;</td>
+          <td>Specifies the line height.</td>
+        </tr>
+        <tr>
+          <td>&lt;white-space&gt;</td>
+          <td>Specifies how to handle white-space inside an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;word-spacing&gt;</td>
+          <td>Specifies the space between words in a text.</td>
+        </tr>
+        <tr>
+          <td>&lt;font&gt;</td>
+          <td>Sets all the font properties in one declaration.</td>
+        </tr>
+        <tr>
+          <td>&lt;font-family&gt;</td>
+          <td>Specifies the font family for text.</td>
+        </tr>
+        <tr>
+          <td>&lt;font-size&gt;</td>
+          <td>Specifies the font size of text.</td>
+        </tr>
+        <tr>
+          <td>&lt;font-style&gt;</td>
+          <td>Specifies the font style for text.</td>
+        </tr>
+        <tr>
+          <td>&lt;font-variant&gt;</td>
+          <td>Specifies whether or not a text should be displayed in a small-caps font.</td>
+        </tr>
+        <tr>
+          <td>&lt;font-weight&gt;</td>
+          <td>Specifies the weight of a font.</td>
+        </tr>
+        <tr>
+          <td>&lt;list-style&gt;</td>
+          <td>Sets all the properties for a list in one declaration.</td>
+        </tr>
+        <tr>
+          <td>&lt;list-style-image&gt;</td>
+          <td>Specifies an image as the list-item marker.</td>
+        </tr>
+        <tr>
+          <td>&lt;list-style-position&gt;</td>
+          <td>Specifies the position of the list-item markers (bullet points).</td>
+        </tr>
+        <tr>
+          <td>&lt;list-style-type&gt;</td>
+          <td>Specifies the type of list-item marker.</td>
+        </tr>
+        <tr>
+          <td>&lt;empty-cells&gt;</td>
+          <td>Specifies whether or not to display borders and background on empty cells in a table.</td>
+        </tr>
+        <tr>
+          <td>&lt;table-layout&gt;</td>
+          <td>Sets the layout algorithm to be used for a table.</td>
+        </tr>
+        <tr>
+          <td>&lt;display&gt;</td>
+          <td>Specifies how an element should be displayed.</td>
+        </tr>
+        <tr>
+          <td>&lt;visibility&gt;</td>
+          <td>Specifies whether or not an element should be visible.</td>
+        </tr>
+        <tr>
+          <td>&lt;bottom&gt;</td>
+          <td>Sets the bottom margin edge for a positioned box.</td>
+        </tr>
+        <tr>
+          <td>&lt;clip&gt;</td>
+          <td>Clips an absolutely positioned element.</td>
+        </tr>
+        <tr>
+          <td>&lt;position&gt;</td>
+          <td>Sets the left margin edge for a positioned box.</td>
+        </tr>
+        <tr>
+          <td>&lt;left&gt;</td>
+          <td>Defines independent, self-contained content.</td>
+        </tr>
+        <tr>
+          <td>&lt;right&gt;</td>
+          <td>Sets the right margin edge for a positioned box.</td>
+        </tr>
+        <tr>
+          <td>&lt;details&gt;</td>
+          <td>Defines additional details that the user can view or hide.</td>
+        </tr>
+        <tr>
+          <td>&lt;top&gt;</td>
+          <td>Sets the top margin edge for a positioned box.</td>
+        </tr>
+        <tr>
+          <td>&lt;overflow&gt;</td>
+          <td>Specifies what happens if content overflows an element's box.</td>
+        </tr>
+        <tr>
+          <td>&lt;overflow-anchor&gt;</td>
+          <td>Makes it possible to turn off scroll anchoring.</td>
+        </tr>
+        <tr>
+          <td>&lt;overflow-wrap&gt;</td>
+          <td>Specifies whether or not the browser can break lines with long words, if they overflow its container.</td>
+        </tr>
+        <tr>
+          <td>&lt;clear&gt;</td>
+          <td>Specifies what should happen with the element that is next to a floating element.</td>
+        </tr>
+        <tr>
+          <td>&lt;float&gt;</td>
+          <td>Specifies whether an element should float to the left, right, or not at all.</td>
+        </tr>
+        <tr>
+          <td>&lt;opacity&gt;</td>
+          <td>Sets the opacity level for an element.</td>
+        </tr>
+        <tr>
+          <td>&lt;content&gt;</td>
+          <td>Used with the ::before and ::after pseudo-elements, to insert generated content.</td>
+        </tr>
+        <tr>
+          <td>&lt;counter-increment&gt;</td>
+          <td>Increments one or more counter values.</td>
+        </tr>
+        <tr>
+          <td>&lt;counter-reset&gt;</td>
+          <td>Creates or resets one or more counters.</td>
+        </tr>
+        <tr>
+          <td>&lt;counter()&gt;</td>
+          <td>Returns the current value of the named counter.</td>
+        </tr>
+        
+      </table>
+      </p>
+    </div>
+    <img class="icon" src="assets_webpages/computer-icon.png">
+  </section>
+
+</body>
+
+</html>

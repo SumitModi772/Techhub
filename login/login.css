@@ -1,0 +1,45 @@
+.login-form-container {
+  width: 600px;
+  height: 430px;
+  background-color: lightblue;
+  border-radius: 15px;
+  position: relative;
+  top: 50px;
+  left: 350px;
+
+}
+
+.form {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.submit {
+  margin-top: 30px;
+  margin-left: 200px;
+  background-color: orangered;
+  color: white;
+  padding: 15px 20px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+}
+

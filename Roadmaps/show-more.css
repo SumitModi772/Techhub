@@ -1,0 +1,55 @@
+.explore {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: #1f5692;
+  margin-top: 80px;
+}
+
+.icons-container {
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 130px;
+}
+
+.icons {
+  padding: 30px 30px;
+  background: orangered;
+  color: white;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 250px;
+  margin-left: 5px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.html-img {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 33px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}

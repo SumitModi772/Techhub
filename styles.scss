@@ -1,0 +1,60 @@
+$primary-color: orangered;
+$secondary-color: #1f5692;
+$third-color: #2c1e4a;
+$text-color: white;
+$font-family: 'Times New Roman', Times, serif;
+
+$base-font-size: 16px;
+
+// Mixin for responsive font size
+@mixin responsive-font($size) {
+  font-size: $size;
+  @media (max-width: 768px) {
+    font-size: $size * 0.9; // Decrease font size on smaller screens
+  }
+}
+
+// Extend for common button styles
+%button-styles {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+// Styles
+body {
+  font-family: $font-family;
+  font-size: $base-font-size;
+  color: $primary-color;
+}
+
+h1 {
+  @include responsive-font(2rem);
+  color: $secondary-color;
+}
+
+.button-primary {
+  @extend %button-styles;
+  background-color: $primary-color;
+  color: white;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.button-secondary {
+  @extend %button-styles;
+  background-color: $secondary-color;
+  color: white;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}
+
+.container1 {
+  padding: 20px;
+  background-color: lighten($primary-color, 40%);
+}
